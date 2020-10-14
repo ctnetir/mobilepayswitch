@@ -19,7 +19,7 @@ module.exports = {
     var merchantUrlScheme = args[0]
     if (merchantUrlScheme == null) return error(new Error('Missing merchantUrlScheme'))
 
-    var country = 'Denmark'
+    var country = 'Finland'
 
     merchant = { merchantId, merchantUrlScheme, country }
 
