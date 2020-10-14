@@ -25,7 +25,7 @@
 
 - (void)isMobilePayInstalled:(CDVInvokedUrlCommand*)command
 {
-    MobilePayCountry country = MobilePayCountry_Denmark; // TODO make multi country
+    MobilePayCountry country = MobilePayCountry_Finland; // TODO make multi country
 
     BOOL isInstalled = [[MobilePayManager sharedInstance] isMobilePayInstalled:country];
     CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsBool:isInstalled];
