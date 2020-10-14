@@ -52,7 +52,7 @@ public class CDVMobilePayAppSwitch extends CordovaPlugin {
     }
 
     protected boolean isMobilePayInstalled(JSONArray args, CallbackContext callbackContext) throws JSONException {
-        Country country = Country.DENMARK; // TODO make multi country
+        Country country = Country.FINLAND; // TODO make multi country
         boolean isInstalled = MobilePay.getInstance().isMobilePayInstalled(this.cordova.getActivity().getApplicationContext(), country);
         callbackContext.sendPluginResult(new PluginResult(Status.OK, isInstalled));
 
@@ -90,7 +90,7 @@ public class CDVMobilePayAppSwitch extends CordovaPlugin {
         JSONObject options = args.getJSONObject(2);
         if (options == null) options = new JSONObject(); // Just so we dont have to handle this case
 
-        Country country = Country.DENMARK;
+        Country country = Country.FINLAND;
 
         MobilePay.getInstance().init(merchantId, country);
 
